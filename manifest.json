@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Twitter follow test",
+    "description": "twitter follow test",
+    "version": "0.1",
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": ["jquery-2.2.0.min.js","main.js"],
+			"run_at": "document_start",
+			"all_frames": false
+		}
+	]
+}
